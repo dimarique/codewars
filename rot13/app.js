@@ -7,11 +7,10 @@ function rot13(message) {
         for (i = 0; i <= alphabet.length; i++) {
             if (letter === alphabet[i]) {
                 result = result + code[i];
-            }
-            if (Number(letter) == letter) {
-                result = result + letter;
-            }
+            } else {
+            result = result + letter}
         }
     }
+    console.log(result.length);
     return result;
 }
