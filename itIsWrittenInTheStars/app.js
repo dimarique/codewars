@@ -3,7 +3,7 @@ function starSign(date) {
     const dateYear = date.getFullYear();
     switch (true) {
         case dateInt >= Date.parse(new Date(dateYear, 0, 21)) &&
-            dateInt <= Date.parse(new Date(dateYear, 1, 19)): {
+            dateInt < Date.parse(new Date(dateYear, 1, 20)): {
             return "Aquarius";
             break;
         }
@@ -57,7 +57,7 @@ function starSign(date) {
             return "Sagittarius";
             break;
         }
-        case dateInt >= Date.parse(new Date(dateYear, 11, 22)) &&
+        case dateInt > Date.parse(new Date(dateYear, 11, 22)) &&
             dateInt <= Date.parse(new Date(dateYear, 12, 20)): {
             return "Capricorn";
             break;
