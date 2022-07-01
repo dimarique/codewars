@@ -1,6 +1,5 @@
 function digital_root(n) {
-    const splittedN = n.toString().split('');
-    const result = splittedN.reduce((total, number) => total + number);
-    return splittedN;
-    // console.log(splittedN)
+	const reducer = (total, number) => total + number;
+	let result = n.toString().split("").map(Number).reduce(reducer);
+	return result < 10 ? result : digital_root(result);
 }
