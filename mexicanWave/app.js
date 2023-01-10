@@ -1,9 +1,8 @@
 function wave(str) {
-  const newStr = str.split("");
-  const oneSymb = newStr[1].toUpperCase();
-  let result = [];
-  for (let i = 0; i <= newStr.length; i++) {
-    result = result + oneSymb;
-  }
-  return result;
+	let output = [];
+	let longArray =[]
+	const newStr = str.split("");
+	newStr.forEach(e => longArray.push(str));
+	longArray.map(word => console.log(word))
+	return longArray;
 }
